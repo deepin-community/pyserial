@@ -1,0 +1,20 @@
+Source: pyserial
+Section: python
+Priority: optional
+Maintainer: Matthias Klose <doko@debian.org>
+Build-Depends: debhelper (>= 11)
+Build-Depends-Indep: python3, dh-python,
+  python3-setuptools,
+Standards-Version: 4.5.0
+Homepage: http://pyserial.sourceforge.net/
+
+Package: python3-serial
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Suggests: python3-wxgtk3.0 | python3-wxgtk
+XB-Python-Version: ${python3:Versions}
+Description: pyserial - module encapsulating access for the serial port
+ This module encapsulates the access for the serial port. It provides
+ back-ends for standard Python running on Windows, Linux, BSD (possibly
+ any POSIX compliant system). The module named "serial" automatically
+ selects the appropriate back-end.

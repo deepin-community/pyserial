@@ -1,0 +1,185 @@
+pyserial (3.5~b0-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+    - miniterm renamed to pyserial-minitermi (or run with python3 -m serial).
+  * Bump standards and debhelper versions.
+
+ -- Matthias Klose <doko@debian.org>  Sun, 11 Oct 2020 13:19:11 +0200
+
+pyserial (3.4-5.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop python2 support; Closes: #937533
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 03 Feb 2020 11:29:07 -0500
+
+pyserial (3.4-5) unstable; urgency=medium
+
+  * Re-add the build dependency on python2, use python2 in the rules file.
+  * Bump standards version.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 07 Jan 2020 14:21:42 +0100
+
+pyserial (3.4-4) unstable; urgency=medium
+
+  * Drop build dependency on Python 2.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 21 Jul 2018 13:47:07 +0200
+
+pyserial (3.4-3) unstable; urgency=medium
+
+  * Build-depend on python-setuptools and python3-setuptools. Closes: #896773.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 24 Apr 2018 14:15:43 +0200
+
+pyserial (3.4-2) unstable; urgency=medium
+
+  * Build-depend on dh-python.
+  * Stop shipping the Python2 based miniterm.py.
+
+ -- Matthias Klose <doko@debian.org>  Mon, 09 Apr 2018 13:57:25 +0200
+
+pyserial (3.4-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Thu, 03 Aug 2017 18:50:33 -0400
+
+pyserial (3.3-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Fri, 12 May 2017 12:29:37 -0700
+
+pyserial (3.2.1-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 02 Nov 2016 16:00:39 +0100
+
+pyserial (3.1.1-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 31 Aug 2016 16:36:21 +0200
+
+pyserial (3.1-2) unstable; urgency=medium
+
+  * Don't ship aio.py for the Python2 package. Closes: #826078.
+
+ -- Matthias Klose <doko@debian.org>  Fri, 03 Jun 2016 02:08:01 +0200
+
+pyserial (3.1-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 01 Jun 2016 23:32:47 +0200
+
+pyserial (3.0.1-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Mon, 25 Jan 2016 21:36:30 +0100
+
+pyserial (3.0-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 05 Jan 2016 13:17:56 +0100
+
+pyserial (2.7-1) unstable; urgency=medium
+
+  * New upstream version.
+    - Fix issue #28, accept any speed on Linux. Closes: #717058.
+    - Fix issue #166, RFC2217 connections always fail. Closes: #788439.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 25 Jul 2015 19:17:31 +0200
+
+pyserial (2.6-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Update for wxPython 3.0, Closes: #759074:
+    - debian/control: Update dependencies.
+    - examples/wxSerialConfigDialog.py,examples/wxTerminal.py: Drop calls to
+      wx.InitAllImageHandlers() which is a no-op for 2.8 and gives a
+      deprecation warning with 3.0.  Update deprecated wx.SAVE to wx.FD_SAVE.
+
+ -- Olly Betts <olly@survex.com>  Tue, 07 Oct 2014 09:02:39 +0000
+
+pyserial (2.6-1) unstable; urgency=low
+
+  * New upstream version. Closes: #664788.
+
+ -- Matthias Klose <doko@debian.org>  Fri, 15 Feb 2013 01:40:46 +0100
+
+pyserial (2.5-3) unstable; urgency=low
+
+  * Drop alternative dependency on python-wxgtk2.6. Closes: #647738.
+  * Fix setting custom baudrate with Python 3.x. Closes: #687799.
+  * Fix spelling errors in the package description. Closes: #644291.
+  * Remove the miniterm example for Python3; removed upstream too.
+    Closes: #674801.
+
+ -- Matthias Klose <doko@debian.org>  Mon, 17 Sep 2012 14:49:13 +0200
+
+pyserial (2.5-2.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Rebuild to add Python 2.7 support
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 08 May 2011 16:46:04 +0200
+
+pyserial (2.5-2) unstable; urgency=low
+
+  * Fix conversion to dh_python2 (Andreas Moog). Closes: #617486.
+  * Fix typo in serialposix.py (Jack Peterson). Closes: #613462.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 16 Mar 2011 04:29:39 +0100
+
+pyserial (2.5-1) experimental; urgency=low
+
+  * New upstream version. Closes: #520618.
+  * Build a python3-serial package.
+  * Don't use string exception in miniterm.py. Closes: #585328.
+  * Convert to dh_pycentral. Closes: #616985.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 25 Jan 2011 07:59:17 +0100
+
+pyserial (2.3-1) unstable; urgency=low
+
+  * New upstream version.
+  * Update watch file. Closes: #450106.
+  * Mention the upstream name in the package description. Closes: #459590.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 24 Jun 2008 19:14:57 +0200
+
+pyserial (2.2-3) unstable; urgency=low
+
+  * Remove reference to python-wxgtk2.4. Closes: #391989.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 28 Oct 2006 15:25:59 +0200
+
+pyserial (2.2-2) unstable; urgency=low
+
+  * User python-central. Closes: #356992.
+
+ -- Matthias Klose <doko@debian.org>  Thu,  8 Jun 2006 02:01:11 +0200
+
+pyserial (2.2-1) unstable; urgency=low
+
+  * New upstream version.
+  * Suggest python-wxgtk2.6 | python-wxgtk2.4.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 24 Aug 2005 06:45:22 +0000
+
+pyserial (2.1-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Sun, 29 Aug 2004 14:49:57 +0200
+
+pyserial (2.0-1) unstable; urgency=low
+
+  * Initial Release (closes: #227725).
+
+ -- Matthias Klose <doko@debian.org>  Sat, 24 Apr 2004 00:15:15 +0200
